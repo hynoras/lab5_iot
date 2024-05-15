@@ -3,10 +3,11 @@ const Device = require('../model/deviceModel');
 const SensorType = require('../model/sensorTypeModel');
 
 module.exports = {
-    saveSystemInformation: async (req, res) => {
+    saveData: async (req, res) => {
         try {
           const { deviceid, sensorid, value, devicename, sensorname } = req.body;
             
+          
             const newDevice = new Device({ devicename });
             await newDevice.save();
 

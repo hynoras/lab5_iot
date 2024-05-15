@@ -1,9 +1,8 @@
-// routes/sensorRoutes.js
 const express = require('express');
 const router = express.Router();
-const controller = require('../controller/controller');
+const controller = require('../controller/sensorDataController');
 
-router.post('/save', controller.saveSystemInformation);
+router.post('/save', controller.saveData);
 router.get('/getAll', controller.getData);
 router.get('/getAllData', controller.getAllData);
 

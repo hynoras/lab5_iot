@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
-import DeviceList from './components/DeviceList';
-import GeneralInfo from './components/GeneralInfo';
+import Header from './components/Header/Header';
+import DeviceList from './components/Device List/DeviceList';
+import GeneralInfo from './components/General Info/GeneralInfo';
 
 function App() {
   return (

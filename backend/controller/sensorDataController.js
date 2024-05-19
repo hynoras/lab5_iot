@@ -7,12 +7,11 @@ module.exports = {
         try {
           const { deviceid, sensorid, value, devicename, sensorname } = req.body;
             
-          
-            const newDevice = new Device({ devicename });
-            await newDevice.save();
+            // const newDevice = new Device({ devicename });
+            // await newDevice.save();
 
-            const newSensorType = new SensorType({ deviceid: newDevice._id, sensorname });
-            await newSensorType.save();
+            // const newSensorType = new SensorType({ deviceid: newDevice._id, sensorname });
+            // await newSensorType.save();
 
             const newSensorData = new SensorData({ deviceid: newDevice._id, sensorid: newSensorType._id, value });
             await newSensorData.save();

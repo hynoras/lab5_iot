@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import DeviceList from './components/Device List/DeviceList';
 import GeneralInfo from './components/General Info/GeneralInfo';
+import Visualization from './components/Visualization/index';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main>
         <GeneralInfo /> {/* Render the GeneralInfo component */}
         <DeviceList /> {/* Render the DeviceList component */}
+        <Visualization />
       </main>
     </div>
   );

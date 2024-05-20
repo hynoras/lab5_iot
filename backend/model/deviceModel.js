@@ -1,19 +1,15 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const mongoose = require("mongoose");
+const { Schema, model } = mongoose;
 
-const deviceSchema = new mongoose.Schema({
-  devicename: {
-    type: String,
-    required: true
-  },
+const DeviceSchema = new Schema(
+  {
+    device_name: String,
+    sensor_type: String,
+    // isActive: Boolean,
+    lastActive: { type: Date, default: Date.now },
+  }
+);
 
-  lastactive: {
-    type: Date,
-    default: Date.now
-  },
+const DeviceModel = model("Device", DeviceSchema);
 
-});
-
-const Device = mongoose.model('Device', deviceSchema);
-
-module.exports = Device;
+module.exports = DeviceModel;

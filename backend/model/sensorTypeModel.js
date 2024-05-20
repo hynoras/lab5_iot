@@ -8,7 +8,6 @@ const sensorTypeSchema = new mongoose.Schema({
   },
   sensorname: {
     type: String,
-    required: true
   }
 });
 

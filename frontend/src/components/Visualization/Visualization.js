@@ -12,9 +12,9 @@ const Visualization = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const tempResponse = await axios.get('http://localhost:3001/api/sensor/get');
-        const humResponse = await axios.get('http://localhost:3001/api/sensor/get');
-        const lightResponse = await axios.get('http://localhost:3001/api/sensor/get');
+        const tempResponse = await axios.get('http://localhost:3001/data/temperature');
+        const humResponse = await axios.get('http://localhost:3001/data/humidity');
+        const lightResponse = await axios.get('http://localhost:3001/data/lightIntensity');
 
         setTemperatureData(tempResponse.data.data);
         setHumidityData(humResponse.data.data);

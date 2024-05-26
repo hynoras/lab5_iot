@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import DeviceList from './components/Device List/DeviceList';
 import GeneralInfo from './components/General Info/GeneralInfo';
 import Visualization from './components/Visualization/index';
+import RealTimeData from './components/RealTimeData';
 
 function App() {
   return (
